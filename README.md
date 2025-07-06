@@ -33,7 +33,6 @@ The following metrics were calculated directly in SQL:
 | **Attrition Rate** | What percentage of employees leave the organization monthly? |
 | **Department Headcount** | Which departments have the most employees? |
 | **Top 5 by Attrition** | Which departments are losing the most people? |
-| **Tenure Buckets** | How long are employees staying before leaving? |
 | **Turnover Rate** | What is the rate at which employees are being replaced? |
 | **Net Growth** | What’s the net increase or decrease in workforce over time? |
 
