@@ -1,66 +1,75 @@
 # 📊 HR Analytics Dashboard (Power BI + SQL)
-This project is a fully interactive HR Analytics Dashboard built in Power BI, supported by SQL queries for backend data processing. It’s designed to monitor key workforce metrics like headcount trends, attrition rate, departmental breakdowns, and more — with insights driven by real-world data.
+
+This project is an interactive HR Analytics Dashboard developed using Power BI, with backend data transformation and metric calculations performed in SQL. The goal is to deliver actionable workforce insights from raw employee data using a structured and analytical approach.
 
 ---
 
-## 🔍 Overview
+## 🔍 Project Overview
 
-The dashboard provides a clear view of:
-- Workforce size and trends over time
-- Hiring vs Attrition (Joiners vs Leavers)
-- Gender distribution and turnover rates
-- Department-wise headcount and attrition insights
-- Headcount forecasting
+The dashboard answers key HR questions such as:
 
-Each visual is connected with slicers (filters) for real-time, dynamic reporting.
+- 🧑‍🤝‍🧑 What is our current headcount across departments?
+- 📈 How many employees joined or exited each month?
+- 🧮 What is the attrition rate and how does it trend over time?
+- ⚖️ What is the gender distribution across active employees?
+- 🏢 Which departments are experiencing the highest turnover?
+- ⏳ How long do employees typically stay (tenure distribution)?
+- 🔮 Can we forecast headcount trends for the coming months?
+
+These insights were developed using structured SQL queries followed by interactive dashboards built in Power BI.
+
+---
+
+## 🧠 Business Questions Solved Using SQL
+
+The following metrics were calculated directly in SQL:
+
+| SQL Query | Business Question |
+|-----------|-------------------|
+| **Headcount** | How many active employees are there currently? |
+| **Joiners by Month** | How many new hires joined each month? |
+| **Leavers by Month** | How many employees exited each month? |
+| **Gender Ratio** | What is the gender breakdown of current employees? |
+| **Attrition Rate** | What percentage of employees leave the organization monthly? |
+| **Department Headcount** | Which departments have the most employees? |
+| **Top 5 by Attrition** | Which departments are losing the most people? |
+| **Tenure Buckets** | How long are employees staying before leaving? |
+| **Turnover Rate** | What is the rate at which employees are being replaced? |
+| **Net Growth** | What’s the net increase or decrease in workforce over time? |
+
+All these queries were written in **SQLite** and used as input tables in Power BI.
 
 ---
 
 ## 🧰 Tools & Technologies
 
-- **Power BI**: Dashboard development, visual analytics, DAX
-- **SQLite**: Data querying and transformation
-- **Excel**: Initial data prep and formatting
-- **GitHub**: Version control and project showcase
+- **Power BI**: Dashboard creation, DAX for metrics, forecasting
+- **SQLite**: Metric calculation, data transformation
+- **Excel**: Initial data formatting
+- **GitHub**: Version control and portfolio hosting
 
 ---
 
-## 📂 Files Included
+## 📂 Repository Contents
 
 | File/Folder | Description |
 |-------------|-------------|
-| `HR_Analytics_Dashboard.pbix` | Power BI dashboard file |
-| `HR_Dashboard_Data.sqlite` | SQLite database with raw employee data |
-| `SQL_Queries.sql` | SQL scripts used to prepare datasets |
-| `Screenshots/` | Folder with dashboard preview images |
+| `HR_Analytics_Dashboard.pbix` | Final Power BI file |
+| `employee_data.sqlite` | Database file with raw employee data |
+| `SQL_queries.sql` | SQL file with all metric queries |
+| `Screenshots/` | Dashboard preview images |
 | `README.md` | This documentation file |
 
 ---
 
-## 📈 Key Metrics Tracked
+## 🗂 Dataset Source
 
-- ✅ Headcount
-- ➕ Joiners (monthly)
-- ➖ Leavers (monthly)
-- ⚖️ Gender Ratio
-- 📉 Attrition Rate
-- 🏆 Top 5 Departments by Attrition
-- 🔁 Turnover Rate
-- 🏢 Department-wise Headcount
-- 🔮 Forecasted Headcount (Power BI Analytics Pane)
-- 📊 Net Growth of Workforce
-
----
-
-## 🗂 Data Source
-
-Data used in this project is sourced from an open HR dataset published on **[Kaggle](https://www.kaggle.com/)**.  
-All personal or sensitive information has been anonymized for ethical use.
+The data was sourced from a public dataset available on **[Kaggle](https://www.kaggle.com/)**.  
+All records are anonymized and used for educational purposes only.
 
 ---
 
 ## 📸 Dashboard Preview
-
 ![Dashboard Preview]
 ![Dashboard Preview_1](https://github.com/user-attachments/assets/50f219db-9a26-414a-9261-70534428c57e)
 ![Dashboard Preview_2](https://github.com/user-attachments/assets/4c5e1be8-f8f6-45a4-bf3d-4a2ffabbdc36)
